@@ -2,40 +2,40 @@
 $month = date('M');
 
 switch ($month) {
-    case 1:
+    case ($month == 1):
         echo 'We are in the month of January';
         break;
-    case 2:
+    case ($month == 2):
         echo 'We are in the month of February';
         break;
-    case 3:
+    case ($month == 3):
         echo 'We are in the month of March';
         break;
-    case 4:
+    case ($month == 4):
         echo 'We are in the month of April';
         break;
-    case 5:
+    case ($month == 5):
         echo 'We are in the month of May';
         break;
-    case 6:
+    case ($month == 6):
         echo 'We are in the month of June';
         break;
-    case 7:
+    case ($month == 7):
         echo 'We are in the month of July';
         break;
-    case 8:
+    case ($month == 8):
         echo 'We are in the month of August';
         break;
-    case 9:
+    case ($month == 9):
         echo 'We are in the month of September';
         break;
-    case 10:
+    case ($month == 10):
         echo 'We are in the month of October';
         break;
-    case 11:
+    case ($month == 11):
         echo 'We are in the month of November';
         break;
-    case 12:
+    case ($month == 12):
         echo 'We are in the month of December';
         break;
 }
