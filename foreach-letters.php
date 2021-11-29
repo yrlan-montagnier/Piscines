@@ -1,5 +1,6 @@
 <?php
 
-foreach (range('A', 'Z') as $char) {
+foreach (range('A', 'Y') as $char) {
     echo "$char | ";
 }
+echo("Z");
