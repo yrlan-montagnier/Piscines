@@ -17,7 +17,8 @@ function upperCaseFirst(string $str): string
 
 function lowerCaseFirst(string $str): string
 {
-    return strtoLower($str[0]);
+    $lowerCaseStr = implode(' ', array_map(function($e) { return lcfirst($e); }, explode(' ', $str)));
+    return $lowerCaseStr;
 }
 
 #function removeBlankSpace(string $str): string
