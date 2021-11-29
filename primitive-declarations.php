@@ -5,5 +5,5 @@ $firstEscapeStr = "Now I am assigned a string! Fabulous.";
 $firstBool = true;
 $firstInteger = 1;
 $firstFloat = 1.5;
-var_dump($firstNull);
-$firstArray[3] = "def";
+$firstNull = var_dump($empty);
+$firstArray[5] = "2, null, 'Hi'";
