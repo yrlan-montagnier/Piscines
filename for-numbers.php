@@ -1,5 +1,5 @@
 <?php  
-$count = 0;  
+
 $num = 2;
 
 while ($num <= 100 ) {  
@@ -9,13 +9,14 @@ while ($num <= 100 ) {
         if (($num%$i)==0) {  
             $div_count++;  
         }  
-    }   if ($div_count<3 && $num == 97) {  
-            echo $num;  
-            $count=$count+1;  
-        }
-        elseif ($div_count<3) {  
-            echo $num." , ";  
-            $count=$count+1;  
-        }
+    } 
+    if ($div_count<3 && $num !=97) {  
+        echo "$num , ";  
+        $div_count++;
+    }
+    else if ($div_count<3 && $num = 97) {
+        echo $num;
+        $div_count++;
+    }
     $num=$num+1;  
 }
