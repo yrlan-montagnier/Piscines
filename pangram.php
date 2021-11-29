@@ -2,7 +2,7 @@
 
 function isPangram(string $str): bool {
     $newStr = preg_replace('/\s+/', '', $str);
-    $pattern = '/[A-Z]/ig';
+    $pattern = '/[A-Z]/i';
 
     echo preg_match($pattern, $newStr);
     return preg_match($pattern, $newStr);
