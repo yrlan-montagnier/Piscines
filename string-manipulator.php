@@ -20,7 +20,7 @@ function lowerCaseFirst(string $str): string
     return strtoLower($str[0]);
 }
 
-function removeBlankSpace(string $str): string
-{
-    return strtolower($str);
-}
+#function removeBlankSpace(string $str): string
+#{
+#    return strtolower($str);
+#}
