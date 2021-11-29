@@ -1,5 +1,4 @@
 <?php
-$str = "test";
 
 function capsMe(string $str): string
 {
@@ -8,7 +7,7 @@ function capsMe(string $str): string
 
 function lowerMe(string $str): string
 {
-    return lcfirst($str);
+    return strtolower($str);
 }
 
 function upperCaseFirst(string $str): string
@@ -18,7 +17,7 @@ function upperCaseFirst(string $str): string
 
 function lowerCaseFirst(string $str): string
 {
-    return strtolower($str);
+    return lcfirst($str);
 }
 
 function removeBlankSpace(string $str): string
