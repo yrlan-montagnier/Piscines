@@ -17,11 +17,11 @@ function upperCaseFirst(string $str): string
 
 function lowerCaseFirst(string $str): string
 {
-    $lowerCaseStr = implode(' ', array_map(function($e) { return lcfirst($e); }, explode(' ', $str)));
-    return $lowerCaseStr;
+    $lowerCaseFirstLetter = implode(' ', array_map(function($e) { return lcfirst($e); }, explode(' ', $str)));
+    return $lowerCaseFirstLetter;
 }
 
-#function removeBlankSpace(string $str): string
-#{
-#    return strtolower($str);
-#}
+function removeBlankSpace(string $str): string
+{
+    return trim($str);
+}
