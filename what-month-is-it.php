@@ -1,5 +1,5 @@
 <?php
-$month = date('M');
+$month = date('m');
 
 switch ($month) {
     case ($month == 1):
