@@ -1,22 +1,24 @@
 <?php
 
-function isPangram(string $str): bool {
-    $new_str = str_replace(' ', '', $str);
-    echo $new_str;
+function isPangram(string $string) : bool
+{
+    $alphabet = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
+    $isPangram = false;
+    $strArray = str_split($string);
 
-    $pattern = "/[A-Z]/i";
-    $match = preg_match_all($pattern, $new_str);
-
-    echo preg_match($pattern, $new_str);
-
-    if ($match) {
-        return 1;
-        echo "Pangram";
+    foreach ($strArray as $char) {
+        if (ctype_alpha($char)) {
+            if (ctype_upper($char)) {
+                $char = strtolower($char);
+            }
+            $key = array_search($char, $alphabet);
+            if ($key !== false) {
+                unset($alphabet[$key]);
+            }
+        }
     }
-    else {
-        return 0;
-        echo "Pas un pangram";
+    if (!$alphabet) {
+        $isPangram = true;  
     }
+    return $isPangram;
 }
-
-isPangram('the quick brown fox jumps over the lazy dog');
