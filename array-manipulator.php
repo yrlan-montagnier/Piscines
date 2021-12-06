@@ -18,7 +18,7 @@ function arrayContains(array $arr, int|string|float $search): int|string {
         $res = $search;
     } 
     if (!in_array($search, $arr)) {
-        $res = 'Nothing';
+        $res = "Nothing";
     }
     return $res;
 }
