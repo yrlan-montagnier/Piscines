@@ -1,4 +1,4 @@
 <?php
-function joinWords(array $arr, $separator = ' ') {
+function joinWords(array $arr,string $separator = ' ') :string {
     return implode($separator, $arr);
 }
