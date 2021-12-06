@@ -21,6 +21,7 @@ function arrayContains($arr, $search) {
     }
 }
 
+
 function merge(array $arr1, array $arr2, array $arr3) {
     return array_merge($arr1, $arr2, $arr3);
 }
