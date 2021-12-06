@@ -1,5 +1,4 @@
 <?php
-function joinWords(array $arr, string $separator) {
+function joinWords(array $arr, $separator = ' ') {
     return implode($separator, $arr);
 }
-echo(joinWords(['My', 'name', 'is', 'John'], "-"));
