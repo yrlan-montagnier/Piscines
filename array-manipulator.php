@@ -15,11 +15,12 @@ function sum(array $arr): int {
 
 function arrayContains(array $arr, int|string|float $search): int|string {
     if (in_array($search, $arr)) {
-        return $search;
+        $res = $search;
     } 
     if (!in_array($search, $arr)) {
-        return 'Nothing';
+        $res = 'Nothing';
     }
+    return $res;
 }
 
 function merge(array $arr1, array $arr2, array $arr3) {
