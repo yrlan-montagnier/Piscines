@@ -13,7 +13,7 @@ function sum(array $arr): int {
     return array_sum($arr);
 }
 
-function arrayContains(array $arr, int|string|float $search): int|string {
+function arrayContains(array $arr, int|string|float $search): bool|string {
     if (in_array($search, $arr)) {
         $res = $search;
     } 
