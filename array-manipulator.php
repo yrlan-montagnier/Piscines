@@ -13,11 +13,11 @@ function sum(array $arr): int {
     return array_sum($arr);
 }
 
-function arrayContains(array $arr, int|string|float $search): bool|string {
+function arrayContains($arr, $search) {
     if (in_array($search, $arr)) {
-        return true;
+        return $search;
     } else {
-        return "Nothing";
+        return false;
     }
 }
 
