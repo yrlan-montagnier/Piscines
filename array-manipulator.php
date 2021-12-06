@@ -16,9 +16,10 @@ function sum(array $arr): int {
 function arrayContains(array $arr, int|string|float $search): int|string {
     if (in_array($search, $arr, TRUE)) {
         return $search;
-    } else {
+    } 
+    if (in_array($search, $arr, FALSE)) {
         return 'Nothing';
-    }
+    } 
 }
 
 function merge(array $arr1, array $arr2, array $arr3) {
