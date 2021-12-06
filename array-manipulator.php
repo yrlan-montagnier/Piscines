@@ -14,7 +14,7 @@ function sum(array $arr): int {
 }
 
 function arrayContains(array $arr, int|string|float $search): int|string {
-    if (in_array($search, $arr, TRUE)) {
+    if (array_key_exists($search, $arr)) {
         return $search;
     } else {
         return 'Nothing';
