@@ -15,9 +15,8 @@ function sum(array $arr): int {
 
 function arrayContains(array $arr, int|string|float $search): int|string {
     if (in_array($search, $arr)) {
-        echo $arr;
-    } 
-    else {
+        return $arr;
+    } else {
         return 'Nothing';
     }
 }
