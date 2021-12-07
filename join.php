@@ -1,5 +1,5 @@
 <?php
-function joinWords(array $arr, string $separator = ' ') {
+function joinWords(array $arr, string $separator = ' '): string {
     $str = "";       
 
     foreach( $arr as $key => $value ){
