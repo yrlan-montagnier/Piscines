@@ -6,14 +6,12 @@ function joinWords(array $arr, string $separator = ' '): string {
 
     foreach( $arr as $value ) {
 
-        if ($value != $last) {
-            $str = $value.$separator;
-        } 
+        $str = $value.$separator;
 
         if ($value == $last) {
             $str = $value;
         }
-        
+    echo $str;
     }
     return $str;
 }
