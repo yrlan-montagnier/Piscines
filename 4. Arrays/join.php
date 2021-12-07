@@ -14,4 +14,4 @@ function joinWords(array $arr, string $separator = ' '): string {
     return $str;
 }
 
-echo joinWords(['La', 'fonction', 'join'], '-');
+print_r(joinWords(['La', 'fonction', 'join'], '-'));

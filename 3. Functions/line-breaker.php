@@ -1,16 +1,7 @@
 <?php  
 
 function breakLine(string $str, int $length) {  
-    $strArray = str_split($str, $length);
-    
-    foreach ($strArray as $char) {
-        $charLength = strlen($char);
-        if ($char < $charLength) {
-            return $char;
-        } else {
-            return '\n';
-        }
-    }
+    return wordwrap($str, $length, "\n", true);
 }
 
-echo breakLine('test', 3);
+echo breakLine('testdsfkodkgfodsgjkodsgjkodskgds', 5);
