@@ -5,14 +5,15 @@ function joinWords(array $arr, string $separator = ' '): string {
     $last = end($arr);
 
     foreach( $arr as $value ) {
+
         if ($value != $last) {
             $str = $value.$separator;
-            echo $str;        
-        } else {
-            $str = $value;
-            echo $str;
-        }
+        } 
 
+        if ($value == $last) {
+            $str = $value;
+        }
+        
     }
     return $str;
 }
