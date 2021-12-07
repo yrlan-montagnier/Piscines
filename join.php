@@ -5,15 +5,13 @@ function joinWords(array $arr, string $separator = ' '): string {
     $last = end($arr);
 
     foreach( $arr as $value ) {
-
-        $str = $value.$separator;
-
         if ($value == $last) {
-            $str = $value;
+            $str = $str.$value;
+        } else {
+            $str = $str.$value.$separator;
         }
-    echo $str;
     }
     return $str;
 }
 
-joinWords(['La', 'fonction', 'join'], ' ');
+echo joinWords(['La', 'fonction', 'join'], '-');
